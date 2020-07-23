@@ -1,0 +1,81 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediSpot
+ *
+ * @ORM\Table(name="redi_spot")
+ * @ORM\Entity
+ */
+class RediSpot
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="spot_name", type="string", length=22, nullable=true)
+     */
+    private $spotName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="project_id", type="integer", nullable=true)
+     */
+    private $projectId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="campaign_id", type="integer", nullable=true)
+     */
+    private $campaignId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="revision_not_counted", type="smallint", nullable=true)
+     */
+    private $revisionNotCounted;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notes", type="text", nullable=true)
+     */
+    private $notes;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="revisions", type="integer", nullable=true)
+     */
+    private $revisions;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="graphics_revisions", type="smallint", nullable=true)
+     */
+    private $graphicsRevisions;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first_revision_cost", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $firstRevisionCost;
+
+
+}

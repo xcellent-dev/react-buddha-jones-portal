@@ -1,0 +1,67 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediCustomerContact
+ *
+ * @ORM\Table(name="redi_customer_contact")
+ * @ORM\Entity
+ */
+class RediCustomerContact
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="customer_id", type="integer", nullable=true)
+     */
+    private $customerId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=100, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=100, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mobile_phone", type="string", length=50, nullable=true)
+     */
+    private $mobilePhone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="office_phone", type="string", length=50, nullable=true)
+     */
+    private $officePhone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="postal_address", type="text", nullable=true)
+     */
+    private $postalAddress;
+
+
+}

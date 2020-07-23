@@ -1,0 +1,28 @@
+p {
+  font-size: 0.95em;
+  color: #0B0C32;
+}
+
+.typeWhite {
+  color: #F7F7F7;
+}
+
+.typeDim {
+  color: #A59E97;
+}
+
+.typeBlue {
+  color: #0768D8;
+}
+
+.typeAlert {
+  color: #D75B2B;
+}
+
+.typeSuccess {
+  color: #189E44;
+}
+
+.styleBold {
+  font-weight: bold;
+}

@@ -1,0 +1,6 @@
+:global(.IconBriefcase) {
+  background: url("./../../assets/images/account/briefcase-icon.svg") 0 0 no-repeat;
+  background-size: 24px 22px;
+  width: 24px;
+  height: 22px;
+}

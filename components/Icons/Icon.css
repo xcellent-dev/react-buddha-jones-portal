@@ -1,0 +1,4 @@
+:global(.icon) {
+  position: relative;
+  display: block;
+}

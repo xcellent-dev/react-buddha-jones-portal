@@ -1,0 +1,46 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediSpotSentToSpotVersion
+ *
+ * @ORM\Table(name="redi_spot_sent_to_spot_version")
+ * @ORM\Entity
+ */
+class RediSpotSentToSpotVersion
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_sent_id", type="bigint", nullable=true)
+     */
+    private $spotSentId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_id", type="bigint", nullable=true)
+     */
+    private $spotId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="version_id", type="bigint", nullable=true)
+     */
+    private $versionId;
+
+
+}

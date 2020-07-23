@@ -1,0 +1,41 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediCustomerPrice
+ *
+ * @ORM\Table(name="redi_customer_price")
+ * @ORM\Entity
+ */
+class RediCustomerPrice
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="customer_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $customerId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="activity_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $activityId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="price", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $price;
+
+
+}

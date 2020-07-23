@@ -1,0 +1,6 @@
+:global(.IconChatBubbleWhiteIcon) {
+  background: url(./../../assets/images/comments/chat-bubble-white-icon.svg) 0 0 no-repeat;
+  background-size: 30px 25px;
+  width: 30px;
+  height: 25px;
+}

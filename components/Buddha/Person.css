@@ -1,0 +1,120 @@
+:global(.person) {
+  justify-content: flex-start;
+
+  & :global(.col) {
+    padding-left: 0;
+    padding-right: 0;
+
+    &:global(.personName) {
+      padding-left: 8px;
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+
+      &:first-child {
+        padding-left: 0;
+        padding-right: 8px;
+      }
+
+      & > * {
+        font-size: 0.95em;
+      }
+
+      & > label {
+        display: block;
+        margin-top: 4px;
+      }
+
+      & > p {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+      }
+
+      & :global(.personCloseIcon) {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        float: right;
+        position: relative;
+        top: -2px;
+        margin-left: 6px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #CEC7C0;
+        border: 1px solid #CEC7C0;
+        transition: 300ms all 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+    }
+
+    &:global(.personImage) {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+
+      & span {
+        overflow: hidden;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 4px solid #D2CBC6;
+        background: url("../../assets/images/account/empty-user-profile-picture.png") center no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &:global(.personClickable) {
+    cursor: pointer;
+  }
+
+  &:global(.smallImage) {
+
+    & :global(.col) {
+
+      &:global(.personImage) {
+
+        & span {
+          width: 21px;
+          height: 21px;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+
+  &:global(.darkImage) {
+
+    & :global(.col) {
+
+      &:global(.personImage) {
+
+        & span {
+          border-color: color(#D2CBC6 lightness(-36%));
+        }
+      }
+    }
+  }
+
+  &:hover {
+
+    & :global(.col) {
+
+      &:global(.personName) {
+
+        & :global(.personCloseIcon) {
+          background: #FFFFFF;
+          border-color: #D75B2B;
+        }
+      }
+    }
+  }
+}

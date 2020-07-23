@@ -1,0 +1,137 @@
+:global(.dropdown) {
+  position: relative;
+}
+
+:global(.dropdownLabel) {
+  position: relative;
+  text-align: right;
+  color: #A59E97;
+  font-size: 1.0em;
+  cursor: pointer;
+}
+
+:global(.dropdownLabel.left) {
+  text-align: left;
+}
+
+:global(.dropdownLabel.center) {
+  text-align: center;
+}
+
+:global(.dropdownLabel.right) {
+  text-align: right;
+}
+
+:global(.dropdownLabel) {
+  cursor: pointer;
+}
+
+:global(.dropdownLabel) p {
+  display: inline;
+}
+
+:global(.dropdownLabel) p span {
+  color: inherit;
+}
+
+:global(.radio) :global(.dropdownLabel) p {
+  font-size: 1.0em;
+}
+
+:global(.radio) :global(.dropdownLabel) p span {
+  font-size: inherit;
+  color: #0768D8;
+}
+
+:global(.radio) :global(.dropdownLabel) p strong {
+  font-size: 0.9em;
+}
+
+:global(.dropdownLabel) p strong {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #0B0C32;
+  font-weight: 700;
+  transition: 300ms color 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+:global(.dropdownLabel):hover p strong {
+  color: #D75B2B;
+}
+
+.white :global(.dropdownLabel) p span {
+  color: #FFFFFF;
+}
+
+.white :global(.dropdownLabel) p strong {
+  color: #FFFFFF;
+}
+
+.white :global(.dropdownLabel):hover p strong {
+  color: #FFDA47;
+}
+
+:global(.dropdownLabel) i {
+  position: static;
+  display: inline-block;
+  transform: rotateZ(0deg);
+  transform-origin: 50% 38%;
+  transition: 500ms transform 0ms cubic-bezier(1, 0, 0, 1);
+}
+
+.open :global(.dropdownLabel) i {
+  transform: rotateZ(-180deg);
+}
+
+:global(.twolines) :global(.dropdownLabel) {
+  display: block;
+  text-align: left;
+  padding-right: 32px;
+}
+
+:global(.twolines) :global(.dropdownLabel) strong {
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+:global(.twolines) :global(.dropdownLabel) i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+:global(.dropdownGroup) {
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  min-width: 192px;
+  left: 0;
+  top: 0;
+  margin: 0px;
+  background: #EFEAE6;
+  box-shadow: 0px 4px 12px color(#A59E97 alpha(0.3));
+  border: 1px solid color(#A59E97 alpha(0.5));
+  border-radius: 3px;
+  overflow: hidden;
+  transform-origin: top;
+  transform: scale(0);
+  opacity: 0;
+  transition: 500ms transform 0ms cubic-bezier(1, 0, 0, 1),
+              500ms margin 0ms cubic-bezier(1, 0, 0, 1),
+              300ms opacity 0ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.open :global(.dropdownGroup) {
+  opacity: 1;
+  transform: scale(1);
+  transition: 400ms transform 0ms cubic-bezier(1, 0, 0, 1),
+              600ms margin 0ms cubic-bezier(1, 0, 0, 1),
+              500ms opacity 0ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+:global(.dropdownGroup.top) {
+  top: auto;
+  bottom: 0;
+  transform-origin: bottom;
+}

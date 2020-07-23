@@ -1,0 +1,60 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediSpotSent
+ *
+ * @ORM\Table(name="redi_spot_sent")
+ * @ORM\Entity
+ */
+class RediSpotSent
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="work_type_id", type="integer", nullable=true)
+     */
+    private $workTypeId;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="datetime", nullable=true)
+     */
+    private $date;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sent_via_method_id", type="integer", nullable=true)
+     */
+    private $sentViaMethodId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notes", type="text", nullable=true)
+     */
+    private $notes;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status_id", type="integer", nullable=true)
+     */
+    private $statusId;
+
+
+}

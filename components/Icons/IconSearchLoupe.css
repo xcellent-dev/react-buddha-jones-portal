@@ -1,0 +1,6 @@
+:global(.IconSearchLoupe) {
+  background: url(./../../assets/images/form/search-loupe.svg) 0 0 no-repeat;
+  background-size: 13px 13px;
+  width: 13px;
+  height: 13px;
+}

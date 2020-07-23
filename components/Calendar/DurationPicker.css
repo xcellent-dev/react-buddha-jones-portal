@@ -1,0 +1,26 @@
+:global .durationPickerLabel,
+:global .durationPickerTime,
+:global .durationPicker :global .button {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+:global .durationPickerTime {
+  font-weight: 700;
+}
+
+:global .durationPickerTime span {
+  font-weight: 300;
+  opacity: 0.6;
+  margin-right: 4px;
+}
+
+:global .durationPickerTime span:last-child {
+  margin-right: 0;
+}
+
+.decreaseArrow,
+.increaseArrow {
+  position: relative;
+  top: 3px;
+}

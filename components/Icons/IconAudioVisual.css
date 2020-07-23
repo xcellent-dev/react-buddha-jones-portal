@@ -1,0 +1,6 @@
+:global(.IconAudioVisual) {
+  background: url(./../../assets/images/toggle/audio-visual-icon.svg) 0 0 no-repeat;
+  background-size: 11px 11px;
+  width: 11px;
+  height: 11px;
+}

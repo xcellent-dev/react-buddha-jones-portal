@@ -1,0 +1,53 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediProject
+ *
+ * @ORM\Table(name="redi_project")
+ * @ORM\Entity
+ */
+class RediProject
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="project_name", type="string", length=200, nullable=true)
+     */
+    private $projectName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="customer_id", type="integer", nullable=true)
+     */
+    private $customerId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="first_point_of_contact_id", type="integer", nullable=true)
+     */
+    private $firstPointOfContactId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notes", type="text", nullable=true)
+     */
+    private $notes;
+
+
+}

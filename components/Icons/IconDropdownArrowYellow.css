@@ -1,0 +1,6 @@
+:global(.IconDropdownArrowYellow) {
+  background: url(./../../assets/images/form/dropdown-arrow-yellow.svg) 0 0 no-repeat;
+  background-size: 11px 8px;
+  width: 11px;
+  height: 11px;
+}

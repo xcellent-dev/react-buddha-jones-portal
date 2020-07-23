@@ -1,0 +1,94 @@
+.comments {
+  display: block;
+}
+
+.commentsTimeline{
+  border: 1pt solid #CAC7C4;
+  background: #EFEAE6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comment {
+  background: #F7F7F7;
+}
+
+.commentHeader {
+  padding: 12px 24px;
+  border-bottom: 1pt solid #EFEAE6;
+  overflow: hidden;
+}
+
+.commentImage {
+  float: left;
+  width: 44px;
+  margin-right: 12px;
+}
+
+.commentImage span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 4pt solid #D2CBC6;
+  background: url('./../../assets/images/account/empty-user-profile-picture.png') center no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.commentAuthor {
+  float: left;
+  margin-top: 6px;
+  line-height: 1.1;
+}
+
+.commentName {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #0B0C32;
+}
+
+.commentDate {
+  font-size: 0.85em;
+  font-weight: 300;
+  color: #5A4D3F;
+  display: block;
+  clear: both;
+}
+
+.commentContent {
+  background: #FAFAFA;
+  padding: 24px;
+  font-size: 0.95em;
+  line-height: 1.4;
+  border-bottom: 2pt solid #E5DBD0;
+}
+
+.commentForm {
+  margin-top: 12px;
+}
+
+.commentForm textarea {
+  padding: 16px 24px !important;
+}
+
+.commentButtonContainer {
+  position: relative;
+  text-align: right;
+  margin-bottom: 14px;
+}
+
+.commentButtonContainer .commentMessage {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  font-size: 0.9em;
+}
+
+.commentButtonContainer :global(.button) {
+  margin: 0;
+  margin-left: auto;
+  margin-top: 12px;
+}

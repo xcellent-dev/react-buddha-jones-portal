@@ -1,0 +1,34 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediActivityTypeToActivity
+ *
+ * @ORM\Table(name="redi_activity_type_to_activity")
+ * @ORM\Entity
+ */
+class RediActivityTypeToActivity
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="activity_type_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $activityTypeId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="activity_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $activityId;
+
+
+}

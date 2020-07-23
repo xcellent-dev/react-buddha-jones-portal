@@ -1,0 +1,34 @@
+textarea.filesField,
+p.noGraphics {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.graphicsAddCol {
+  align-self: center;
+}
+
+table.graphics {
+
+  & th {
+    border-top: none;
+    border-bottom-color: #B8B3AD;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: none;
+    color: #7E756D;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+
+  & tbody {
+
+    & tr {
+
+      & td {
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+      }
+    }
+  }
+}

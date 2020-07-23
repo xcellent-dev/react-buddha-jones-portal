@@ -1,0 +1,46 @@
+{
+  "name": "buddha-jones-portal",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3.8"
+  },
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "axios": "^0.15.2",
+    "history": "^3.0.0",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.1",
+    "react": "^15.3.0",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-app": "^1.1.2",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "zenscroll": "^3.3.0"
+  },
+  "devDependencies": {
+    "react-app-tools": "^1.1.2"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015",
+      "stage-1"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb"
+  },
+  "scripts": {
+    "lint": "eslint actions components core routes test utils main.js",
+    "build": "react-app build",
+    "start": "react-app run"
+  }
+}

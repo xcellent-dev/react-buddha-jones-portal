@@ -1,0 +1,46 @@
+.workersSection {
+  position: relative;
+}
+
+.estimateSummaryRow h3 {
+  position: relative;
+  color: #5A4D3F;
+  font-weight: 300;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.estimateSummaryRow > * {
+  display: inline-block !important;
+  padding: 0 6px;
+}
+
+.estimateSummaryRow > *:first-child {
+  padding-left: 0;
+}
+
+.estimateSummaryRow > *:last-child {
+  padding-right: 0;
+}
+
+.estimateSummaryRow p {
+  position: relative;
+  font-size: 1.1em;
+  color: #D75B2B;
+}
+
+.estimateSummaryRowWithCounter h3 {
+  top: -12px;
+}
+
+.summarySectionCol {
+  align-self: flex-start;
+}
+
+.summarySectionRow {
+  align-items: center;
+}
+
+.submitCol :global(.button) {
+  float: right;
+}

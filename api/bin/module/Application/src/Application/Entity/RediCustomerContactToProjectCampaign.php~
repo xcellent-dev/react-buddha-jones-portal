@@ -1,0 +1,39 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediCustomerContactToProjectCampaign
+ *
+ * @ORM\Table(name="redi_customer_contact_to_project_campaign")
+ * @ORM\Entity
+ */
+class RediCustomerContactToProjectCampaign
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="customer_contact_id", type="integer", nullable=true)
+     */
+    private $customerContactId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="project_to_campaign_id", type="integer", nullable=true)
+     */
+    private $projectToCampaignId;
+
+
+}

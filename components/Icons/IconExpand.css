@@ -1,0 +1,6 @@
+:global(.IconExpand) {
+  background: url(./../../assets/images/toggle/expand-icon.svg) 0 0 no-repeat;
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px;
+}

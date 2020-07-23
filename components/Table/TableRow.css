@@ -1,0 +1,39 @@
+tbody tr td {
+  background: color(#F2F0EF alpha(0%));
+  transition: 300ms background 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+tbody tr:hover td {
+  background: #F2F0EF;
+}
+
+tbody tr.rowHighlight td {
+  background: #EFEAE6;
+}
+
+tbody tr.rowHighlight:hover td {
+  background: color(#EFEAE6 lightness(-2%) saturation(-2%));
+}
+
+tbody tr.rowSubrow td {
+  background: #F2F0EF;
+}
+
+tbody tr.rowSubrow:hover td {
+  background: color(#F2F0EF lightness(-2%) saturation(+4%));
+}
+
+tbody tr.rowSubrow td:first-child {
+  background: url("./../../assets/images/table/table-sub-row.png") left repeat;
+}
+
+table tbody tr.rowSubrow td {
+  padding-top: 8px;
+}
+
+tbody tr.rowBorder td {
+  border-bottom-color: #38322C;
+  border-bottom-style: solid;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}

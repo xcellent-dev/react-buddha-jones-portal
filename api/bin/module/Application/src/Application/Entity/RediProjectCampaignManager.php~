@@ -1,0 +1,34 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediProjectCampaignManager
+ *
+ * @ORM\Table(name="redi_project_campaign_manager")
+ * @ORM\Entity
+ */
+class RediProjectCampaignManager
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="project_campaign_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $projectCampaignId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="manager_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $managerId;
+
+
+}

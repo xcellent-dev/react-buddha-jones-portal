@@ -1,0 +1,6 @@
+:global(.IconChatDotsBrown) {
+  background: url("./../../assets/images/comments/chat-dots-brown-icon.svg") 0 0 no-repeat;
+  background-size: 18px 16px;
+  width: 18px;
+  height: 16px;
+}

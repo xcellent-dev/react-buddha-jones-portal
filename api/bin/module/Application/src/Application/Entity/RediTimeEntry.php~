@@ -1,0 +1,123 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediTimeEntry
+ *
+ * @ORM\Table(name="redi_time_entry")
+ * @ORM\Entity
+ */
+class RediTimeEntry
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_id", type="integer", nullable=true)
+     */
+    private $userId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="project_id", type="integer", nullable=true)
+     */
+    private $projectId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="campaign_id", type="integer", nullable=true)
+     */
+    private $campaignId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_id", type="integer", nullable=true)
+     */
+    private $spotId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="version_id", type="integer", nullable=true)
+     */
+    private $versionId;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="start_date", type="datetime", nullable=true)
+     */
+    private $startDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="duration", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $duration;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="activity_type_id", type="integer", nullable=true)
+     */
+    private $activityTypeId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="activity_description", type="text", nullable=true)
+     */
+    private $activityDescription;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notes", type="text", nullable=true)
+     */
+    private $notes;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="non_billable", type="smallint", nullable=true)
+     */
+    private $nonBillable;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="created_by", type="integer", nullable=true)
+     */
+    private $createdBy;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=true)
+     */
+    private $createdAt;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status", type="integer", nullable=true)
+     */
+    private $status;
+
+
+}

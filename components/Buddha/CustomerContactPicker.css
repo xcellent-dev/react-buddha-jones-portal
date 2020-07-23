@@ -1,0 +1,6 @@
+:global(.row).contacts {
+
+  & > :global(.col) {
+    flex: 0 1 auto;
+  }
+}

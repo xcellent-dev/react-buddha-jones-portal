@@ -1,0 +1,6 @@
+:global(.IconNoCountBrown) {
+  background: url(./../../assets/images/counter/no-count-brown.svg) 0 0 no-repeat;
+  background-size: 6px 7px;
+  width: 6px;
+  height: 7px;
+}

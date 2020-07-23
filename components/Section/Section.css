@@ -1,0 +1,48 @@
+:global(.section) {
+  position: relative;
+}
+
+.sectionHeader {
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.sectionTitle h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #A59E97;
+
+  & > strong {
+    font-weight: 400;
+    color: color(#A59E97 lightness(-16%));
+  }
+
+  & > em {
+    font-weight: 300;
+    color: #A59E97;
+  }
+
+  & > span {
+    color: color(#A59E97 lightness(+8%));
+    font-weight: 400;
+  }
+}
+
+.sectionElements {
+  text-align: right;
+}
+
+.sectionElements > :global(.row) {
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+}
+
+.sectionElements > :global(.row) > :global(.col) {
+  flex: 0 1 auto;
+}
+
+.sectionInner {
+  width: 100%;
+}

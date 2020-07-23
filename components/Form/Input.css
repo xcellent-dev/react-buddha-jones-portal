@@ -1,0 +1,115 @@
+.fieldGroup {
+  position: relative;
+}
+
+.fieldGroup input {
+  box-sizing: border-box;
+  background: #F7F5F3;
+  border: 1px solid #CAC7C4;
+  border-radius: 3px;
+  padding: 10px 16px;
+  color: #0768D8;
+  font-size: 0.9em;
+  width: 100%;
+  transition: 300ms background 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              300ms border 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              300ms color 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.fieldGroup input:focus {
+  outline: none;
+  background: #FFFFFF;
+  border-color: #0768D8;
+}
+
+.fieldGroupBrown input {
+  color: #5A4D3F;
+}
+
+.fieldGroup input:hover {
+  background: #FDFCFC;
+}
+
+.fieldGroupBrown input:focus {
+  border-color: #5A4D3F;
+}
+
+.fieldGroupBlueFill input {
+  background: #3999BE;
+  border-color: #2D7895;
+  color: #FFFFFF;
+}
+
+.fieldGroupBlueFill input:hover {
+  background: #348BAD;
+}
+
+.fieldGroupBlueFill input:focus {
+  background: #337D99;
+  border-color: #226077;
+  color: #FFFFFF;
+}
+
+.fieldGroupBrownFill input {
+  background: #E9E0D7;
+  border-color: #DDD6CF;
+  color: #AF8A64;
+}
+
+.fieldGroupBrownFill input:hover {
+  background: #DED1C4;
+}
+
+.fieldGroupBrownFill input:focus {
+  background: #C1AD9A;
+  border-color: #AF8A64;
+  color: #FFFFFF;
+}
+
+.fieldGroupBrownFill input:disabled {
+  background: #F0EBE5;
+  border-color: #DDD6CF;
+  color: #FFFFFF;
+}
+
+.fieldGroupGreenFill input {
+  background: #5DB67B;
+  border-color: #469B62;
+  color: #FFFFFF;
+}
+
+.fieldGroupGreenFill input:hover {
+  background: #469B62;
+}
+
+.fieldGroupGreenFill input:focus {
+  background: #47905F;
+  border-color: #2E7645;
+  color: #FFFFFF;
+}
+
+.fieldGroupRed input {
+  border-color: #D75B2B;
+}
+
+.fieldGroupRed input:hover,
+.fieldGroupRed input:focus {
+  border-color: #D30C0C;
+}
+
+.fieldGroup input[disabled] {
+  color: #E5DBD0;
+  cursor: not-allowed;
+}
+
+.fieldGroup input[readonly] {
+  color: #0B0C32;
+  cursor: not-allowed;
+}
+
+.fieldGroup i {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 12px;
+}

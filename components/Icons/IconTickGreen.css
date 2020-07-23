@@ -1,0 +1,6 @@
+:global(.IconTickGreen) {
+  background: url(./../../assets/images/form/tick-green.svg) 0 0 no-repeat;
+  background-size: 12px 9px;
+  width: 12px;
+  height: 9px;
+}

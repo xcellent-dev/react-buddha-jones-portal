@@ -1,0 +1,6 @@
+:global(.IconEmail) {
+  background: url("./../../assets/images/account/email-icon.svg") 0 0 no-repeat;
+  background-size: 24px 18px;
+  width: 24px;
+  height: 18px;
+}

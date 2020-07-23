@@ -1,0 +1,6 @@
+:global(.IconArrowTopBlue) {
+  background: url("./../../assets/images/pagination/arrow-top-blue.svg") 0 0 no-repeat;
+  background-size: 12px 16px;
+  width: 12px;
+  height: 16px;
+}

@@ -1,0 +1,16 @@
+.errorPage {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.errorHeadline {
+  font-size: 9em;
+  font-weight: 700;
+  color: #D75B2B;
+  text-transform: uppercase;
+}
+
+.errorDescription {
+  font-size: 1.2em;
+}

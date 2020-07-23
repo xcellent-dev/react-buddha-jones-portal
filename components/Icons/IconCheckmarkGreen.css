@@ -1,0 +1,6 @@
+:global(.IconCheckmarkGreen) {
+  background: url(./../../assets/images/form/checkmark-circle-green.svg) 0 0 no-repeat;
+  background-size: 22px 22px;
+  width: 22px;
+  height: 22px;
+}

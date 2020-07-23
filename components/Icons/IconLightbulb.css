@@ -1,0 +1,6 @@
+:global(.IconLightbulb) {
+  background: url("./../../assets/images/account/lightbulb-icon.svg") 0 0 no-repeat;
+  background-size: 49px 64px;
+  width: 49px;
+  height: 64px;
+}

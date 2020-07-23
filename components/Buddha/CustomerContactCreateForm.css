@@ -1,0 +1,14 @@
+.form {
+
+  & > p {
+    margin-bottom: 32px;
+  }
+
+  & > div {
+    margin-top: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

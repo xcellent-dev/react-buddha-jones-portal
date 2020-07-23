@@ -1,0 +1,6 @@
+:global(.IconPhone) {
+  background: url("./../../assets/images/account/phone-icon.svg") 0 0 no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}

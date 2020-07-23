@@ -1,0 +1,6 @@
+:global(.IconEditPencilBlue) {
+  background: url(./../../assets/images/form/edit-pencil-blue.svg) 0 0 no-repeat;
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+}

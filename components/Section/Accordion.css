@@ -1,0 +1,80 @@
+.section {
+  border-bottom: 1px solid #A59E97;
+}
+
+.header {
+  position: relative;
+}
+
+.header button {
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: #F4F2F0;
+  color: #0B0C32;
+  font-size: 0.9em;
+  padding: 12px 24px;
+  padding-right: 36px;
+  margin: 0;
+  outline: none;
+  border-bottom: 1px solid #F7F7F7;
+  transition: 300ms background 0ms cubic-bezier(0.86, 0, 0.07, 1),
+              300ms border 0ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.header button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: url("./../../assets/images/counter/counter-plus-blue.svg") center no-repeat;
+}
+
+.header button:hover {
+  background: #FCFAF8;
+}
+
+.active .header button {
+  background: #F7F7F7;
+  color: #0768D8;
+  font-weight: 600;
+  border-bottom-color: #A59E97;
+  border-bottom-style: dashed;
+}
+
+.active .header button::after {
+  background: url("./../../assets/images/counter/counter-minus-blue.svg") center no-repeat;
+}
+
+.active .header button:hover {
+  background: #F4F0EB;
+}
+
+.container {
+  height: 0px;
+  overflow: hidden;
+  transition: 500ms height 0ms cubic-bezier(1, 0, 0, 1);
+}
+
+.active .container {
+  overflow: visible;
+}
+
+.animating .container {
+  overflow: hidden;
+}
+
+.content {
+  padding: 24px;
+}
+
+.disableTransition {
+  transition: none !important;
+}

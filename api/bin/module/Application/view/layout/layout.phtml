@@ -1,0 +1,31 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <?php echo $this->headTitle("Order Pad - AmeriFleet")->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php
+    echo $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+    ?>
+
+</head>
+
+<body>
+
+
+<div id="content" class="wrapper">
+    <div class="container">
+        <?php echo $this->content; ?>
+    </div>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+.container {
+  background: #FFFFFF;
+}
+
+.monthSwitchArrow {
+  position: relative;
+  margin-left: 16px;
+  top: 3px;
+}
+
+.daysListContainer {
+  overflow: hidden;
+}
+
+.daysList {
+  display: flex;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.day {
+  flex: 1 0 auto;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 28px;
+  padding: 0;
+  margin: 0 8px;;
+}
+
+.day:first-child {
+  margin-left: 0;
+}
+
+.day:last-child {
+  margin-right: 0;
+}
+
+.hide > .day {
+  display: none;
+}
+
+.day button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dayNumber {
+  display: inline-block;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  line-height: 29px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.05em;
+  font-weight: 400;
+  color: #0B0C32;
+  background: #3999BE;
+  transition: 300ms background 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              300ms color 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.day button:hover .dayNumber {
+  background: #FFDA47;
+}
+
+.currentDay::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: -8px;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.selectedDay .dayNumber {
+  background: #FFFFFF;
+  color: #0B0C32;
+}
+
+.disabledDay button {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.disabledDay button:hover .dayNumber {
+  background: none;
+  color: #0B0C32;
+}
+
+.dayShortName {
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #FFFFFF;
+  transition: 500ms color 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.day button:hover .dayShortName {
+  color: #FFDA47;
+}

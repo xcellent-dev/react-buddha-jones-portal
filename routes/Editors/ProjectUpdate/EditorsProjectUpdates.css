@@ -1,0 +1,89 @@
+.editor {
+  border-radius: 3px;
+  background: color(#EEEAE7 lightness(+3%));
+  border: 5px solid #EEEAE7;
+  box-sizing: border-box;
+  margin-top: 48px;
+
+  &:first-child {
+    margin-top: 12px;
+  }
+
+  & .lastUpdate {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+    background: #EEEAE7;
+    border-radius: 3px;
+
+    & .dateCol {
+
+      & p {
+        color: #5A4D3F;
+        font-weight: 600;
+        font-size: 0.8em;
+        text-align: right;
+
+        & i {
+          color: #968069;
+          font-weight: 300;
+          font-style: normal;
+        }
+
+        & span {
+          color: inherit;
+          margin-left: 3px;
+          display: inline-block;
+          border-bottom: 3px solid color(#968069 lightness(+20%));
+          padding: 9px 0;
+        }
+      }
+    }
+
+    & .nameCol :global .personName > p {
+      font-weight: 700;
+    }
+  }
+
+  & .projectsGroup {
+
+    & > div {
+      width: 100%;
+    }
+
+    & table {
+
+      & tbody {
+
+        & tr {
+
+          & td {
+            
+            & .dueInput{
+              margin-top:20px;
+              margin-bottom:0px;
+            }
+            & .statusSelect{
+              margin-top:35px;
+              margin-bottom:5px;
+            }
+
+          }
+        }
+
+        & tr.campaignsHeader {
+
+          & td {
+
+            & p {
+              text-transform: uppercase;
+              font-weight: 400;
+              font-size: 0.75em;
+              color: #968069;
+            }
+          }
+        }
+      }
+    }
+  }
+}

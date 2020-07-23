@@ -1,0 +1,21 @@
+.resetButton {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  background: #EFEAE6;
+  border-top: 1px solid color(#E6E0DB lightness(-16%));
+  transition: 300ms background 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  & :global(.buttonLabel) {
+    color: #5A4D3F;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background: color(#EFEAE6 lightness(+4%));
+  }
+}

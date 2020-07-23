@@ -1,0 +1,6 @@
+:global(.IconGraphics) {
+  background: url(./../../assets/images/toggle/graphics-icon.svg) 0 0 no-repeat;
+  background-size: 11px 12px;
+  width: 11px;
+  height: 12px;
+}

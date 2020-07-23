@@ -1,0 +1,53 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediActivity
+ *
+ * @ORM\Table(name="redi_activity")
+ * @ORM\Entity
+ */
+class RediActivity
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=200, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="type_id", type="integer", nullable=true)
+     */
+    private $typeId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_type_id", type="integer", nullable=true)
+     */
+    private $userTypeId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status", type="smallint", nullable=true)
+     */
+    private $status;
+
+
+}

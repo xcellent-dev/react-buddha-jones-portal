@@ -1,0 +1,6 @@
+:global(.IconEllipsis) {
+  background: url(./../../assets/images/pagination/ellipsis.svg) 0 0 no-repeat;
+  background-size: 15px 11px;
+  width: 15px;
+  height: 11px;
+}

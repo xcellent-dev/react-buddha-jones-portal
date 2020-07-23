@@ -1,0 +1,600 @@
+{
+	"id": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+	"name": "buddha jones - remote server",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "b0b77dd0-3c7b-f3ee-57d1-bcd335cdf22c",
+			"name": "activity",
+			"description": "",
+			"order": [
+				"f6a5f5ef-08c8-6c3d-b088-37091eb4d00e"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		},
+		{
+			"id": "133122d0-4bdf-bbb3-f4b1-8e30842c4b80",
+			"name": "auth",
+			"description": "",
+			"order": [
+				"4a85fc7e-61dc-2f62-c5b3-d960f28d0806",
+				"7498d499-f3a6-6298-f9a5-9f4cce269336",
+				"1d0f2931-76d9-47e5-b67a-3c8ef2a3c97a"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		},
+		{
+			"id": "daaddfb0-30ff-8bf1-ceaf-831666125fe0",
+			"name": "campaign",
+			"description": "",
+			"order": [
+				"e88efadf-41b3-cfc8-a711-e966137aab63"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		},
+		{
+			"id": "31725cc5-e69a-a673-f77c-4ce13d446e20",
+			"name": "estimate",
+			"description": "",
+			"order": [
+				"25384834-cdae-d375-f85f-38067dc2027b",
+				"b2b945f2-e2c2-4454-6bc9-3a9eadb56108",
+				"e50fca38-9288-71da-a6b8-d0478b024922"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		},
+		{
+			"id": "c91f3aef-93e9-aa32-cf7e-06ad211f5bec",
+			"name": "project",
+			"description": "",
+			"order": [
+				"bb7d69e5-783a-fe47-163c-955af1561d3b"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		},
+		{
+			"id": "92a75320-91ad-aa4c-2fbf-c3394a6c2790",
+			"name": "spot",
+			"description": "",
+			"order": [
+				"59b1149e-e9a0-7b5f-d74b-d14502e1872e"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		},
+		{
+			"id": "8f82026a-f300-bf59-7978-e61a99f539c7",
+			"name": "time entry",
+			"description": "",
+			"order": [
+				"92c00b42-3d3a-75f8-f358-5081dd396cdf",
+				"17f1e8fd-8e34-26e6-7394-9ea623ac32d9",
+				"3a1ce8a7-7e32-00cf-e10a-99bbea98c2df"
+			],
+			"owner": "130068",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154"
+		},
+		{
+			"id": "c3442f7e-d8ba-79ac-15e7-53c80b5349f7",
+			"name": "version",
+			"description": "",
+			"order": [
+				"c7eb96a9-e653-a034-67fe-906cccc04192"
+			],
+			"owner": "130068",
+			"collectionId": "cfc2b90e-a942-c4cf-f676-85a78da69fc5"
+		}
+	],
+	"timestamp": 1474287922489,
+	"owner": "130068",
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "17f1e8fd-8e34-26e6-7394-9ea623ac32d9",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDk4Nzg5NSwiZXhwIjoxNDc1MDc0Mjk1LCJzdWIiOjF9.FpbD_zIM6dqHHnWms-ZGJv0CJkEjRy-bCcF3f_yyodDcHpaD7chNYwDIYD-qSvDv2rU9D0AnSlvZWRyql4axan5PoUdw4DdCNqf_Vrwm_izmjhHVLyT8AvEZC104ji4dfm_9cVEpBYSyIdYImCS6imM67XrGc7sVY8CS7Cw93RfSCkYTWQIw9JAicet4rtb0Oaw_GZ_ndrouClgGYANNYEnZCa73KHGbz7nLgCeHUuI51DN7CZsa0W1cT72uR4y9ceLHhfXw4AKyL7IwKytE4LDzpCGO2oU1oOrTetENpi6ixj3x72dPGQPKdslKRTytzgeSzAlJGzum32q2A8ZYxw\n",
+			"url": "http://api.buddhajones.redidemo.com/time-entry",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "spot_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_date_time",
+					"value": "04/15/2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "duration",
+					"value": "9:08",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "activity_type_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "some note",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1475002590496,
+			"name": "create",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "1d0f2931-76d9-47e5-b67a-3c8ef2a3c97a",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDAxMjk2NiwiZXhwIjoxNDc0MDk5MzY2LCJzdWIiOjF9.kG3R5GhcnXJN3ars-WvZTHA-SA2mJxYzjHjJ4pyNZUMf4Iu5U7uvUn6SfHlLWaWMemGOv_F2as_Ns4mUzG7VpIvsSRlA9lIcMHf93-fEtxartozHUSZTY-fI9DASG3tcUS5fB9ec5rp0E8_NfZgr2xE2hO8uOzAE5MXvXSC3r7hCsnU9-MpAafQxLKdYPpyHgf0IUYCroSWYyyQeqCMYm_ulRMmrszuAMIU8tnHEnQvSwG1d6cWmppbIk92grUyPBo3dHVuIOFLFCh2ibPj6GCSlR_XO_1W4NHtf1K055Wz53GZWSQJFtUfGr9yt2Y5qu5tQeuF6eA7aG6eskzP8yg\n",
+			"url": "http://api.buddhajones.redidemo.com/login",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290584481,
+			"name": "check login",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "25384834-cdae-d375-f85f-38067dc2027b",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDk4Nzg5NSwiZXhwIjoxNDc1MDc0Mjk1LCJzdWIiOjF9.FpbD_zIM6dqHHnWms-ZGJv0CJkEjRy-bCcF3f_yyodDcHpaD7chNYwDIYD-qSvDv2rU9D0AnSlvZWRyql4axan5PoUdw4DdCNqf_Vrwm_izmjhHVLyT8AvEZC104ji4dfm_9cVEpBYSyIdYImCS6imM67XrGc7sVY8CS7Cw93RfSCkYTWQIw9JAicet4rtb0Oaw_GZ_ndrouClgGYANNYEnZCa73KHGbz7nLgCeHUuI51DN7CZsa0W1cT72uR4y9ceLHhfXw4AKyL7IwKytE4LDzpCGO2oU1oOrTetENpi6ixj3x72dPGQPKdslKRTytzgeSzAlJGzum32q2A8ZYxw\n",
+			"url": "http://api.buddhajones.redidemo.com/estimate",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "spot_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_date_time",
+					"value": "04/15/2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "duration",
+					"value": "9:08",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "activity_type_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "some note",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1475002564720,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "3a1ce8a7-7e32-00cf-e10a-99bbea98c2df",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDk4Nzg5NSwiZXhwIjoxNDc1MDc0Mjk1LCJzdWIiOjF9.FpbD_zIM6dqHHnWms-ZGJv0CJkEjRy-bCcF3f_yyodDcHpaD7chNYwDIYD-qSvDv2rU9D0AnSlvZWRyql4axan5PoUdw4DdCNqf_Vrwm_izmjhHVLyT8AvEZC104ji4dfm_9cVEpBYSyIdYImCS6imM67XrGc7sVY8CS7Cw93RfSCkYTWQIw9JAicet4rtb0Oaw_GZ_ndrouClgGYANNYEnZCa73KHGbz7nLgCeHUuI51DN7CZsa0W1cT72uR4y9ceLHhfXw4AKyL7IwKytE4LDzpCGO2oU1oOrTetENpi6ixj3x72dPGQPKdslKRTytzgeSzAlJGzum32q2A8ZYxw\n",
+			"url": "http://api.buddhajones.redidemo.com/time-entry/7",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "spot_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_date_time",
+					"value": "04/15/2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "duration",
+					"value": "09:08:00",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "activity_type_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "some note",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1475002596456,
+			"name": "get",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "4a85fc7e-61dc-2f62-c5b3-d960f28d0806",
+			"headers": "",
+			"url": "http://api.buddhajones.redidemo.com/login",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "suda",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "letmein",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474287957989,
+			"name": "login",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "59b1149e-e9a0-7b5f-d74b-d14502e1872e",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDI5MDU5NCwiZXhwIjoxNDc0Mzc2OTk0LCJzdWIiOjF9.mv9iJbVB27kro8wVn-0f2ur8VY6KTuNLJFN0hbjs7pMonFTruNcbkgAkAkfzQOj5zZrQ3sEkTapQR19ZkBqAddQc4Z8dvPb-SSqAV3bRrfaO2CHHeDf8WzFVAHAWpXsSeU_CRimfEo_j7gnvNUuL93zjNz1Xy7LAh5J_MTDFvAE23lLpp8i4XxWscsEzVFRmPSxQTWXR_DxzGkB5yHUcfW-MYKhZPxcWXUju2DEJUjTJDi45qcgJSWwQdbU5TNmUEk3RbkxZZHLcr7jFB7Koc8TvzWs_HDcDiP6Yg4y02F2NDMNyA7Q6aqRNqEG6hp_LI3pAYpPzm77-EUGk1RXUdA\n",
+			"url": "http://api.buddhajones.redidemo.com/spot?project_id=1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290675928,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "7498d499-f3a6-6298-f9a5-9f4cce269336",
+			"headers": "",
+			"url": "http://api.buddhajones.redidemo.com/logout",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "username",
+					"value": "suda",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "letmein",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290530644,
+			"name": "logout",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "92c00b42-3d3a-75f8-f358-5081dd396cdf",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NTAwMjYxMCwiZXhwIjoxNDc1MDg5MDEwLCJzdWIiOjF9.CxlcOelMxin2BNJGSTVcOck3ZvVxkV0T9Gc0QLpYm5-8p8LmNz9QJiRBtOzlK7AU9_mz_gpnZQTR-vDXdU7kupl-A9N_t5wcTmJNm79UnAcc8fdRrBzVjEQKro_yQecfLalRvBP9HDdqmPBq-HjpUwaWoeC7cNKKaPDLqu1PDnPqDgOFFyphfoYk0EXtP1lLgd7EtU6Glu0-uLLZD0V0BUuOVs2fTMZHcTmF-IjTUj9BBENasKzX7h3C8-Qr3YgvXb-iaLzIKZSD4rFQRDx7rzn0pAXqhJ4jZREN0Dz2PQrnaQ6eE8IaCAwVQHiFM7XXlCeENUWQm5T7tnrC7WJqgA\n",
+			"url": "http://api.buddhajones.redidemo.com/time-entry",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "spot_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_date_time",
+					"value": "04/15/2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "duration",
+					"value": "9:08",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "activity_type_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "some note",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1475002626010,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "b2b945f2-e2c2-4454-6bc9-3a9eadb56108",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDk4Nzg5NSwiZXhwIjoxNDc1MDc0Mjk1LCJzdWIiOjF9.FpbD_zIM6dqHHnWms-ZGJv0CJkEjRy-bCcF3f_yyodDcHpaD7chNYwDIYD-qSvDv2rU9D0AnSlvZWRyql4axan5PoUdw4DdCNqf_Vrwm_izmjhHVLyT8AvEZC104ji4dfm_9cVEpBYSyIdYImCS6imM67XrGc7sVY8CS7Cw93RfSCkYTWQIw9JAicet4rtb0Oaw_GZ_ndrouClgGYANNYEnZCa73KHGbz7nLgCeHUuI51DN7CZsa0W1cT72uR4y9ceLHhfXw4AKyL7IwKytE4LDzpCGO2oU1oOrTetENpi6ixj3x72dPGQPKdslKRTytzgeSzAlJGzum32q2A8ZYxw\n",
+			"url": "http://api.buddhajones.redidemo.com/estimate",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "spot_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "multiplier",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "submit_to",
+					"value": "99",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version_id",
+					"value": "8",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "some note",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "workers",
+					"value": "[{\"worker_id\":1,\"hourly_rate\":20,\"estimated_hours\":\"7:35\"},{\"worker_id\":2,\"hourly_rate\":30,\"estimated_hours\":\"8:38\"},{\"worker_id\":4,\"hourly_rate\":40,\"estimated_hours\":\"9:45\"},{\"worker_id\":5,\"hourly_rate\":50,\"estimated_hours\":\"10:10\"}]",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1475002570193,
+			"name": "create",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "bb7d69e5-783a-fe47-163c-955af1561d3b",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDI5MDU5NCwiZXhwIjoxNDc0Mzc2OTk0LCJzdWIiOjF9.mv9iJbVB27kro8wVn-0f2ur8VY6KTuNLJFN0hbjs7pMonFTruNcbkgAkAkfzQOj5zZrQ3sEkTapQR19ZkBqAddQc4Z8dvPb-SSqAV3bRrfaO2CHHeDf8WzFVAHAWpXsSeU_CRimfEo_j7gnvNUuL93zjNz1Xy7LAh5J_MTDFvAE23lLpp8i4XxWscsEzVFRmPSxQTWXR_DxzGkB5yHUcfW-MYKhZPxcWXUju2DEJUjTJDi45qcgJSWwQdbU5TNmUEk3RbkxZZHLcr7jFB7Koc8TvzWs_HDcDiP6Yg4y02F2NDMNyA7Q6aqRNqEG6hp_LI3pAYpPzm77-EUGk1RXUdA\n",
+			"url": "http://api.buddhajones.redidemo.com/project",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290668001,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "c7eb96a9-e653-a034-67fe-906cccc04192",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDI5MDU5NCwiZXhwIjoxNDc0Mzc2OTk0LCJzdWIiOjF9.mv9iJbVB27kro8wVn-0f2ur8VY6KTuNLJFN0hbjs7pMonFTruNcbkgAkAkfzQOj5zZrQ3sEkTapQR19ZkBqAddQc4Z8dvPb-SSqAV3bRrfaO2CHHeDf8WzFVAHAWpXsSeU_CRimfEo_j7gnvNUuL93zjNz1Xy7LAh5J_MTDFvAE23lLpp8i4XxWscsEzVFRmPSxQTWXR_DxzGkB5yHUcfW-MYKhZPxcWXUju2DEJUjTJDi45qcgJSWwQdbU5TNmUEk3RbkxZZHLcr7jFB7Koc8TvzWs_HDcDiP6Yg4y02F2NDMNyA7Q6aqRNqEG6hp_LI3pAYpPzm77-EUGk1RXUdA\n",
+			"url": "http://api.buddhajones.redidemo.com/version",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290686170,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "e50fca38-9288-71da-a6b8-d0478b024922",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDk4Nzg5NSwiZXhwIjoxNDc1MDc0Mjk1LCJzdWIiOjF9.FpbD_zIM6dqHHnWms-ZGJv0CJkEjRy-bCcF3f_yyodDcHpaD7chNYwDIYD-qSvDv2rU9D0AnSlvZWRyql4axan5PoUdw4DdCNqf_Vrwm_izmjhHVLyT8AvEZC104ji4dfm_9cVEpBYSyIdYImCS6imM67XrGc7sVY8CS7Cw93RfSCkYTWQIw9JAicet4rtb0Oaw_GZ_ndrouClgGYANNYEnZCa73KHGbz7nLgCeHUuI51DN7CZsa0W1cT72uR4y9ceLHhfXw4AKyL7IwKytE4LDzpCGO2oU1oOrTetENpi6ixj3x72dPGQPKdslKRTytzgeSzAlJGzum32q2A8ZYxw\n",
+			"url": "http://api.buddhajones.redidemo.com/estimate/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "spot_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start_date_time",
+					"value": "04/15/2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "duration",
+					"value": "09:08:00",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "activity_type_id",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "some note",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1475002577554,
+			"name": "get",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "e88efadf-41b3-cfc8-a711-e966137aab63",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDI5MDU5NCwiZXhwIjoxNDc0Mzc2OTk0LCJzdWIiOjF9.mv9iJbVB27kro8wVn-0f2ur8VY6KTuNLJFN0hbjs7pMonFTruNcbkgAkAkfzQOj5zZrQ3sEkTapQR19ZkBqAddQc4Z8dvPb-SSqAV3bRrfaO2CHHeDf8WzFVAHAWpXsSeU_CRimfEo_j7gnvNUuL93zjNz1Xy7LAh5J_MTDFvAE23lLpp8i4XxWscsEzVFRmPSxQTWXR_DxzGkB5yHUcfW-MYKhZPxcWXUju2DEJUjTJDi45qcgJSWwQdbU5TNmUEk3RbkxZZHLcr7jFB7Koc8TvzWs_HDcDiP6Yg4y02F2NDMNyA7Q6aqRNqEG6hp_LI3pAYpPzm77-EUGk1RXUdA\n",
+			"url": "http://api.buddhajones.redidemo.com/campaign?project_id=1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290651585,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		},
+		{
+			"id": "f6a5f5ef-08c8-6c3d-b088-37091eb4d00e",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJBbWVyaUZsZWV0IFBvcnRhbCIsImlhdCI6MTQ3NDIzMzQxNCwiZXhwIjoxNDc0MzE5ODE0LCJzdWIiOjF9.CdlKo7la2XjfJFpEcpyAkMpkMrm4FqJdmZ5qCi1X9URgJRoTDKVCryaWERn3w9sH7TwAQ1Bd3p22GyTYnemfRm9vDVJe057xjk5p6DlDvU0WHNoaPUrOuTdIHXofmzZeE-Dm-IySVCTf7a5kQexUrEwhGRMxD_W8z0dqqfcN7f7snPhEzr__7Gv1jzI0HuC2_Q1SuyZrG7hU8oaO_YRTzusU9DldXwe2-DzuqlUN1MPYyZXW8g7tdfGg98rVRzTQFV4rVA9Kf0FneIpOGT1ES4iCNPvCYX_MTXIA3QsLoj3GaruQA8pVk_KehItXvwxhH5R2XvGJZLZKE3aqmLo7Ng\n",
+			"url": "http://api.buddhajones.redidemo.com/campaign",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1474290537937,
+			"name": "get all",
+			"description": "",
+			"collectionId": "381d2e3c-0266-eca2-8723-9354ca5f5154",
+			"responses": []
+		}
+	]
+}

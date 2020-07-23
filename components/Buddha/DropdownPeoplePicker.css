@@ -1,0 +1,21 @@
+.search {
+  position: absolute;
+  width: 100%;
+  padding: 8px;
+  background: #EFEAE6;
+  border-bottom: 1px solid rgb(196, 182, 171);
+  box-sizing: border-box;
+}
+
+.options {
+  overflow: auto;
+  padding-top: 55px;
+  box-sizing: border-box;
+}
+
+:global(.row).people {
+
+  & > :global(.col).person {
+    padding-top: 8px;
+  }
+}

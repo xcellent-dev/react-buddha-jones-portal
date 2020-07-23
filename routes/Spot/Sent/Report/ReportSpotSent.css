@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+
+.spotDetails {
+  margin-top: 24px;
+}
+
+.sentViaRadioGroup {
+  margin-top: 7px;
+}
+
+.submitButton {
+  top: -12px;
+}

@@ -1,0 +1,33 @@
+.fieldGroup {
+  position: relative;
+}
+
+.fieldGroup textarea {
+  box-sizing: border-box;
+  background: #F7F5F3;
+  border: 1px solid #CAC7C4;
+  border-radius: 3px;
+  padding: 10px 16px;
+  color: #0768D8;
+  line-height: 1.5;
+  font-size: 0.9em;
+  font-family: inherit;
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  min-height: 64px;
+  resize: vertical;
+  transition: 300ms background 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              300ms border 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+              300ms color 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.fieldGroup textarea:focus {
+  outline: none;
+  background: #FFFFFF;
+  border-color: #0768D8;
+}
+
+.fieldGroup textarea:hover {
+  background: #FDFCFC;
+}

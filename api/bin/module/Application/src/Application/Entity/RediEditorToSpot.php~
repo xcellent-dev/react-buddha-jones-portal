@@ -1,0 +1,39 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediEditorToSpot
+ *
+ * @ORM\Table(name="redi_editor_to_spot")
+ * @ORM\Entity
+ */
+class RediEditorToSpot
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="editor_id", type="integer", nullable=true)
+     */
+    private $editorId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_id", type="integer", nullable=true)
+     */
+    private $spotId;
+
+
+}

@@ -1,0 +1,128 @@
+.board {
+  margin: 0;
+}
+
+.projectContainer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.board > :global(.col0) {
+  width: 100%;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+}
+
+.project {
+  border-radius: 3px;
+  background: color(#EEEAE7 lightness(+3%));
+  border: 5px solid #EEEAE7;
+  box-sizing: border-box;
+  margin-top: 48px;
+}
+
+.project:first-child {
+  margin-top: 12px;
+}
+
+.lastUpdate {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+  background: #EEEAE7;
+  border-radius: 3px;
+}
+
+.dateCol p {
+  color: #5A4D3F;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.dateCol p span {
+  display: inline-block;
+  border-bottom: 3px solid color(#968069 lightness(+20%));
+  padding: 9px 0;
+  margin-right: 3px;
+  color: #968069;
+  font-weight: 300;
+}
+
+.nameCol :global .personName > p {
+  font-size: 0.8em;
+  color: #5A4D3F;
+}
+
+.title {
+  margin-top: 48px;
+  cursor: pointer;
+}
+
+.name {
+  display: block;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #0768D8;
+  border-bottom: 1px solid color(#0768D8 alpha(0));
+  transition: 300ms border 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.title:hover .name {
+  border-bottom-color: #0768D8;
+}
+
+.client {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.85em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+:global(.row).campaigns {
+  justify-content: flex-start;
+  padding: 16px;
+}
+
+:global(.row).campaigns > :global(.col) {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  background: #EEEAE7;
+  color: #5A4D3F;
+  font-size: 0.9em;
+}
+
+.summary {
+  align-items: center;
+  border-top: 1px dotted #968069;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin-top: 16px;
+}
+
+.activity p {
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.activity p::before {
+  content: "";
+  top: 2px;
+  margin-right: 8px;
+  position: relative;
+  display: inline-block;
+  background: url("./../../../assets/images/comments/chat-dots-brown-icon.svg") center no-repeat;
+  background-size: 18px 16px;
+  width: 18px;
+  height: 16px;
+}
+
+.activity.unread p {
+  color: #D75B2B;
+}
+
+.pagination {
+  margin-top: 48px;
+}

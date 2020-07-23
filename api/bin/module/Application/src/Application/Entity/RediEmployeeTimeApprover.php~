@@ -1,0 +1,34 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediEmployeeTimeApprover
+ *
+ * @ORM\Table(name="redi_employee_time_approver")
+ * @ORM\Entity
+ */
+class RediEmployeeTimeApprover
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="emp_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $empId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="approver_employee_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $approverEmployeeId;
+
+
+}

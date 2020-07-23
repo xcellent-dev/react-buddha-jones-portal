@@ -1,0 +1,95 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediEstimate
+ *
+ * @ORM\Table(name="redi_estimate")
+ * @ORM\Entity
+ */
+class RediEstimate
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_id", type="integer", nullable=true)
+     */
+    private $spotId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="version_id", type="integer", nullable=true)
+     */
+    private $versionId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="multiplier", type="integer", nullable=true)
+     */
+    private $multiplier;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notes", type="text", nullable=true)
+     */
+    private $notes;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="submitted_to", type="integer", nullable=true)
+     */
+    private $submittedTo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="work_type_id", type="integer", nullable=true)
+     */
+    private $workTypeId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status_id", type="integer", nullable=true)
+     */
+    private $statusId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="total_amount", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $totalAmount;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=true)
+     */
+    private $createdAt;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="updated_at", type="datetime", nullable=true)
+     */
+    private $updatedAt;
+
+
+}

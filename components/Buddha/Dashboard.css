@@ -1,0 +1,49 @@
+.links {
+  overflow: hidden;
+  margin-left: -24px;
+  margin-right: -24px;
+
+  & > div {
+    box-sizing: border-box;
+    padding: 0 24px;
+    float: left;
+    width: 50%;
+
+    & button {
+      cursor: pointer;
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      padding: 48px;
+      text-align: left;
+      border: 5px solid #EEEAE7;
+      background: color(#EEEAE7 lightness(+3%));
+
+      & span {
+        display: block;
+        color: #D75B2B;
+        font-size: 1.0em;
+        font-weight: 400;
+        padding-left: 8px;
+        border-left: 1px solid #D75B2B;
+      }
+
+      & strong {
+        display: block;
+        margin-top: 12px;
+        font-size: 1.6em;
+        font-weight: 700;
+        color: #0768D8;
+        border-bottom: 1px solid color(#0768D8 alpha(0));
+        transition: 300ms border 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+
+      &:hover {
+
+        & strong {
+          border-bottom-color: #0768D8;
+        }
+      }
+    }
+  }
+}

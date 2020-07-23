@@ -1,0 +1,60 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ApiLog
+ *
+ * @ORM\Table(name="api_log")
+ * @ORM\Entity
+ */
+class ApiLog
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api", type="string", length=200, nullable=true)
+     */
+    private $api;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="post_data", type="text", nullable=true)
+     */
+    private $postData;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="get_data", type="text", nullable=true)
+     */
+    private $getData;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="response", type="text", nullable=true)
+     */
+    private $response;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_created", type="datetime", nullable=true)
+     */
+    private $dateCreated;
+
+
+}

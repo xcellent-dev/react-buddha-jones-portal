@@ -1,0 +1,34 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediSpotSentToCustomerContact
+ *
+ * @ORM\Table(name="redi_spot_sent_to_customer_contact")
+ * @ORM\Entity
+ */
+class RediSpotSentToCustomerContact
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_sent_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $spotSentId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="customer_contact_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $customerContactId;
+
+
+}

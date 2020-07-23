@@ -1,0 +1,10 @@
+.editButtonsContainer {
+
+  & :global(.button) {
+    margin-right: 16px;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+}

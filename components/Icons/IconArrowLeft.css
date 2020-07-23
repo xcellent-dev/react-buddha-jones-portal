@@ -1,0 +1,6 @@
+:global(.IconArrowLeft) {
+  background: url(./../../assets/images/pagination/arrow-left.svg) 0 0 no-repeat;
+  background-size: 15px 11px;
+  width: 15px;
+  height: 11px;
+}

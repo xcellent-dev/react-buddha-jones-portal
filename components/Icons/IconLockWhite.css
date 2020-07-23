@@ -1,0 +1,6 @@
+:global(.IconLockWhite) {
+  background: url("./../../assets/images/account/lock-white-icon.svg") 0 0 no-repeat;
+  background-size: 15px 24px;
+  width: 15px;
+  height: 24px;
+}

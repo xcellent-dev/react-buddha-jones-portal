@@ -1,0 +1,10 @@
+.cellCampaign {
+
+  & p {
+
+    & span {
+      font-weight: 300;
+      color: #A59E97;
+    }
+  }
+}

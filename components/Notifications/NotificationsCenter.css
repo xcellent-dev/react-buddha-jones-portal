@@ -1,0 +1,54 @@
+.notificationsCenter {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  top: 0;
+}
+
+.notificationsLive {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.notificationsHistory {
+  overflow: hidden;
+  position: fixed;
+  width: 344px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: color(#5A4D3F alpha(0.5));
+  background: linear-gradient(to bottom, color(#5A4D3F alpha(0.4)), color(#5A4D3F alpha(0.8)));
+  transition: 400ms width 0ms cubic-bezier(1, 0, 0, 1);
+}
+
+.hideHistory .notificationsHistory {
+  width: 0px;
+}
+
+.notificationsLive > div {
+  transform: scaleX(1) translateX(334px);
+}
+
+.hideHistory .notificationsLive > div {
+  transform: scaleX(1) translateX(0px);
+}
+
+.count {
+  position: absolute;
+  z-index: 4;
+}
+
+.toggle {
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  right: 12px;
+}
+
+.empty {
+
+}

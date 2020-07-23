@@ -1,0 +1,95 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediProjectEditorProgress
+ *
+ * @ORM\Table(name="redi_project_editor_progress")
+ * @ORM\Entity
+ */
+class RediProjectEditorProgress
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="project_id", type="integer", nullable=true)
+     */
+    private $projectId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="campaign_id", type="integer", nullable=true)
+     */
+    private $campaignId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="spot_id", type="integer", nullable=true)
+     */
+    private $spotId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notes", type="text", nullable=true)
+     */
+    private $notes;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="watched", type="smallint", nullable=true)
+     */
+    private $watched;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="broken_down", type="smallint", nullable=true)
+     */
+    private $brokenDown;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="due", type="string", length=200, nullable=true)
+     */
+    private $due;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="due_date", type="date", nullable=true)
+     */
+    private $dueDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status_id", type="integer", nullable=true)
+     */
+    private $statusId;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="updated_at", type="datetime", nullable=true)
+     */
+    private $updatedAt;
+
+
+}

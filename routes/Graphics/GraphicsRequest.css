@@ -1,0 +1,16 @@
+.cntSectionRow {
+	margin-bottom: 60px;
+}
+.cntSectionRow p {
+	color: rgb(126, 117, 109);
+}
+.refFilesTbl tbody tr:first-child td {
+	padding-top: 20px;
+}
+
+.disableDatePicker{
+	background: #0B0C32;
+}
+.enableDatePicker{
+	background: #f7f7f7;
+}

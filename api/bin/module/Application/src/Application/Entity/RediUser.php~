@@ -1,0 +1,151 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediUser
+ *
+ * @ORM\Table(name="redi_user")
+ * @ORM\Entity
+ */
+class RediUser
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="username", type="string", length=100, nullable=true)
+     */
+    private $username;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=40, nullable=true)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=100, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first_name", type="string", length=100, nullable=true)
+     */
+    private $firstName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_name", type="string", length=100, nullable=true)
+     */
+    private $lastName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="initials", type="string", length=20, nullable=true)
+     */
+    private $initials;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=200, nullable=true)
+     */
+    private $image;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="type_id", type="integer", nullable=true)
+     */
+    private $typeId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="token", type="string", length=100, nullable=true)
+     */
+    private $token;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="token_created", type="datetime", nullable=true)
+     */
+    private $tokenCreated;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reset_token", type="string", length=100, nullable=true)
+     */
+    private $resetToken;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="hourly_rate", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $hourlyRate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="salary_type", type="string", length=1, nullable=true)
+     */
+    private $salaryType;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="salary_amount", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $salaryAmount;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="min_hour", type="integer", nullable=true)
+     */
+    private $minHour;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="last_login_date", type="datetime", nullable=true)
+     */
+    private $lastLoginDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_date", type="datetime", nullable=true)
+     */
+    private $createdDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status", type="smallint", nullable=true)
+     */
+    private $status;
+
+
+}

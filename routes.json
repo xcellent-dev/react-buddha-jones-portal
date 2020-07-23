@@ -1,0 +1,124 @@
+[
+    {
+        "path": "/user/login",
+        "component": "./routes/User/Login/UserLogin"
+    },
+    {
+        "path": "/user/logout",
+        "component": "./routes/User/Logout/UserLogout"
+    },
+    {
+        "path": "/user/reset-password/:resetToken?",
+        "component": "./routes/User/Reset/UserResetPassword"
+    },
+    {
+        "path": "/",
+        "component": "./routes/Dashboard/Core/DashboardCore",
+        "chunk": "main"
+    },
+    {
+        "path": "/dashboard/spots/:clientId/:client/:spotId/:project?/:campaign?/:spot?",
+        "component": "./routes/Dashboard/Spots/DashboardClientSpots"
+    },
+    {
+        "path": "/projects",
+        "component": "./routes/Projects/Grid/ProjectsGrid"
+    },
+    {
+        "path": "/projects/new",
+        "component": "./routes/Projects/New/ProjectNew"
+    },
+    {
+        "path": "/project/:clientId/:clientName/:projectId/:projectName",
+        "component": "./routes/Projects/Board/ProjectBoard"
+    },
+    {
+        "path": "/time-tracking/create-entry",
+        "component": "./routes/TimeTracking/WorkerEntry/TimeTrackingWorkerEntry"
+    },
+    {
+        "path": "/editors/project-updates",
+        "component": "./routes/Editors/ProjectUpdate/EditorsProjectUpdates"
+    },
+    {
+        "path": "/editors/updates",
+        "component": "./routes/Editors/Updates/EditorsUpdates"
+    },
+    {
+        "path": "/estimates/:estimatesPage?",
+        "component": "./routes/Estimate/EstimatesList"
+    },
+    {
+        "path": "/estimate/estimation-and-quoting/:estimateId?/:fromEstimatesPage?",
+        "component": "./routes/Estimate/EstimationAndQuoting"
+    },
+    {
+        "path": "/spot/forward",
+        "component": "./routes/Spot/Forward/ForwardSpot"
+    },
+    {
+        "path": "/spot-sent/report",
+        "component": "./routes/Spot/Sent/Report/ReportSpotSent"
+    },
+    {
+        "path": "/spot-sent/finalize",
+        "component": "./routes/Spot/Sent/Finalize/FinalizeSpotSent"
+    },
+    {
+        "path": "/finish/request",
+        "component": "./routes/Finish/Request/FinishRequest"
+    },
+    {
+        "path": "/spot/billing",
+        "component": "./routes/Spot/Billing/BillSpot"
+    },
+    {
+        "path": "/activity",
+        "component": "./routes/Activity/List/ActivityList"
+    },
+    {
+        "path": "/activity/define/:activityId?",
+        "component": "./routes/Activity/Definition/ActivityDefinition"
+    },
+    {
+        "path": "/customer",
+        "component": "./routes/Customer/Dashboard/CustomerDashboard"
+    },
+    {
+        "path": "/customer/pricing",
+        "component": "./routes/Customer/Pricing/CustomerPricing"
+    },
+    {
+        "path": "/customer/billing",
+        "component": "./routes/Customer/Billing/List/CustomerBillList"
+    },
+    {
+        "path": "/customer/billing/:billId",
+        "component": "./routes/Customer/Billing/Create/CustomerBillCreate"
+    },
+    {
+        "path": "/user/account",
+        "component": "./routes/User/Account/UserAccount"
+    },
+    {
+        "path": "/error",
+        "component": "./routes/Error/Error",
+        "chunk": "main"
+    },
+    {
+        "path": "/generic-staff",
+        "component": "./routes/GenericStaff/List/GenericStaffList"
+    },
+    {
+        "path": "/generic-staff/define/:genericStaffId?",
+        "component": "./routes/GenericStaff/Definition/GenericStaffDefinition"
+    },
+    {
+        "path": "/graphics/:graphicsRequestPage?",
+        "component": "./routes/Graphics/GraphicsRequestList"
+    },
+    {
+        "path": "/graphic/graphics-request/:requestId?/:fromRequestsPage?",
+        "component": "./routes/Graphics/GraphicsRequest"
+    }
+]

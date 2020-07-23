@@ -1,0 +1,6 @@
+:global(.IconClose) {
+  background: url("./../../assets/images/actions/close-icon.svg") 0 0 no-repeat;
+  background-size: 12px 12px;
+  width: 12px;
+  height: 12px;
+}

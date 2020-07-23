@@ -1,0 +1,34 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediBillingEstimate
+ *
+ * @ORM\Table(name="redi_billing_estimate")
+ * @ORM\Entity
+ */
+class RediBillingEstimate
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="bill_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $billId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="estimate_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $estimateId;
+
+
+}

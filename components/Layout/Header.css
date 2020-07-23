@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #3999BE;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.header > :global(.row) {
+  align-content: center;
+  align-items: center;
+}
+
+.headerText {
+  margin: 0;
+  padding: 0;
+  margin-left: 64px;
+  padding-top: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #0B0C32;
+}
+
+.headerTitle {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #0B0C32;
+}
+
+.headerTitle span {
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.headerSubTitle {
+  position: relative;
+  margin-top: 4px;
+  font-size: 1.0em;
+  font-weight: 600;
+  color: #0B0C32;
+}
+
+.headerSubTitle span {
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.headerElements {
+  text-align: right;
+  margin-right: 64px;
+}
+
+.headerElements > :global(.row) {
+  height: 96px;
+  align-self: stretch;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: center;
+}
+
+.headerElements > :global(.row) > :global(.col) {
+  display: flex;
+  padding-left: 24px;
+}
+
+.headerElements > :global(.row) > :global(.col):first-child {
+  padding-left: 0px;
+}
+
+.headerElements > :global(.row) > :global(.col):only-child {
+  align-content: flex-end;
+  flex: 0 1 auto;
+}
+
+.headerElements > :global(.row) > :global(.col) > * {
+  align-self: center;
+}
+
+.headerElements > :global(.row) > :global(.col) > p {
+  display: inline-block;
+  color: #0B0C32;
+  margin-top: 0;
+  margin-bottom: 0;
+}

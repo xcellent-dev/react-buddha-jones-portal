@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <rect id="Artboard1" x="0" y="0" width="11.25" height="9" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Artboard11" x="0" y="0" width="11.25" height="9"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <path id="checkmark-icon" d="M4.073,6.615L9.925,0.247C10.071,0.089 10.268,0 10.474,0C10.68,0 10.877,0.089 11.023,0.247C11.168,0.406 11.25,0.621 11.25,0.845C11.25,1.069 11.168,1.283 11.023,1.442C9.845,2.723 4.076,9 4.076,9L4.073,8.996L4.069,9C4.069,9 1.405,6.101 0.227,4.82C0.082,4.661 0,4.447 0,4.223C0,3.999 0.082,3.784 0.227,3.625C0.373,3.467 0.57,3.378 0.776,3.378C0.982,3.378 1.179,3.467 1.325,3.625L4.073,6.615Z" style="fill:rgb(7,104,216);"/>
+    </g>
+</svg>

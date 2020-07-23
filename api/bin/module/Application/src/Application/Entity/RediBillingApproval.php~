@@ -1,0 +1,41 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediBillingApproval
+ *
+ * @ORM\Table(name="redi_billing_approval")
+ * @ORM\Entity
+ */
+class RediBillingApproval
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="bill_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $billId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $userId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="approved", type="smallint", nullable=true)
+     */
+    private $approved;
+
+
+}

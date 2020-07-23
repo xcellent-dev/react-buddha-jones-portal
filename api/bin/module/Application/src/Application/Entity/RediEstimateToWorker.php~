@@ -1,0 +1,69 @@
+<?php
+
+namespace Application\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RediEstimateToWorker
+ *
+ * @ORM\Table(name="redi_estimate_to_worker")
+ * @ORM\Entity
+ */
+class RediEstimateToWorker
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="estimate_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $estimateId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="worker_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $workerId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="hourly_rate", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $hourlyRate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="estimated_regular_hours", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $estimatedRegularHours;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="estimated_overtime_hour", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $estimatedOvertimeHour;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="estimated_doubletime_hour", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $estimatedDoubletimeHour;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="total_amount", type="decimal", precision=19, scale=2, nullable=true)
+     */
+    private $totalAmount;
+
+
+}

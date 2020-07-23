@@ -1,0 +1,8 @@
+.money strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.notBold strong {
+  font-weight: 400;
+}

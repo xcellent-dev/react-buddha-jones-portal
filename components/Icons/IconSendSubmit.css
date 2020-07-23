@@ -1,0 +1,6 @@
+:global(.IconSendSubmit) {
+  background: url(./../../assets/images/form/send-icon.svg) 0 0 no-repeat;
+  background-size: 25px 26px;
+  width: 25px;
+  height: 26px;
+}

@@ -1,0 +1,6 @@
+:global(.IconMinusWhite) {
+  background: url(./../../assets/images/counter/counter-minus-white.svg) 0 0 no-repeat;
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+}

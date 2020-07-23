@@ -1,0 +1,424 @@
+:global(.button) {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-content: center;
+
+  & > span {
+    vertical-align: middle;
+    align-self: center;
+  }
+
+  &:global(.floatLeft) {
+    float: left;
+  }
+
+  &:global(.floatRight) {
+    float: right;
+  }
+
+  &:global(.boxButton) {
+    padding: 6px 36px;
+    border-radius: 3px;
+    background: #0768D8;
+    border: 1px solid #0768D8;
+    transition: 400ms background 0ms cubic-bezier(0.77, 0, 0.175, 1);
+
+    & > :global(.buttonLabel) {
+      border: none;
+      color: #F7F7F7;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 400ms color 0ms cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &:global(.boxColorBlack) {
+      background: #0B0C32;
+      border-color: #0B0C32;
+
+      & > :global(.buttonLabelBlack) {
+        color: #F7F7F7;
+      }
+    }
+
+    &:global(.boxColorWhite) {
+      background: #FFFFFF;
+      border-color: #FFFFFF;
+
+      & > :global(.buttonLabelWhite) {
+        color: #0B0C32;
+      }
+    }
+
+    &:global(.boxColorYellow) {
+      background: #FFDA47;
+      border-color: #FFDA47;
+
+      & > :global(.buttonLabelYellow) {
+        color: #0B0C32;
+      }
+    }
+
+    &:global(.boxColorBlue) {
+      background: #0768D8;
+      border-color: #0768D8;
+
+      & > :global(.buttonLabelBlue) {
+        color: #F7F7F7;
+      }
+    }
+
+    &:global(.boxColorOrange) {
+      background: #D75B2B;
+      border-color: #D75B2B;
+
+      & > :global(.buttonLabelOrange) {
+        color: #F7F7F7;
+      }
+    }
+
+    &:hover {
+      background: #F7F7F7;
+
+      & > :global(.buttonLabel) {
+        color: #0768D8;
+      }
+
+      &:global(.boxColorBlack) {
+        background: #0B0C32;
+
+        & > :global(.buttonLabelBlack) {
+          color: #F7F7F7;
+        }
+      }
+
+      &:global(.boxColorWhite) {
+        background: #0B0C32;
+
+        & > :global(.buttonLabelWhite) {
+          color: #F7F7F7;
+        }
+      }
+
+      &:global(.boxColorYellow) {
+        background: #F7F7F7;
+
+        & > :global(.buttonLabelYellow) {
+          color: #0B0C32;
+        }
+      }
+
+      &:global(.boxColorBlue) {
+        background: #F7F7F7;
+
+        & > :global(.buttonLabelBlue) {
+          color: #0768D8;
+        }
+      }
+
+      &:global(.boxColorOrange) {
+        background: #F7F7F7;
+
+        & > :global(.buttonLabelOrange) {
+          color: #D75B2B;
+        }
+      }
+    }
+  }
+
+  & > :global(.buttonLabel) {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: 300ms all 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+      &:global(.buttonLabelBlack) {
+        color: #0B0C32;
+      }
+
+      &:global(.buttonLabelWhite) {
+        color: #F7F7F7;
+      }
+
+      &:global(.buttonLabelYellow) {
+        color: #FFDA47;
+      }
+
+      &:global(.buttonLabelBlue) {
+        color: #0768D8;
+      }
+
+      &:global(.buttonLabelOrange) {
+        color: #D75B2B;
+      }
+
+      &:global(.buttonLabelSmall) {
+        font-size: 1.0em;
+        font-weight: 400;
+      }
+
+      &:global(.buttonLabelLarge) {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+
+      &:global(.buttonLabelOnLeft) {
+        margin-right: 8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &:global(.buttonLabelOnRight) {
+        margin-left: 8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+  }
+
+  & > :global(.buttonIcon) {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    transition: 300ms all 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    & i {
+      position: absolute;
+      display: block;
+      width: auto;
+      height: auto;
+      left: 50%;
+      top: 50%;
+    }
+
+    &:global(.buttonIconNopadding) {
+      width: auto;
+      height: auto;
+      background: none !important;
+
+      & i {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+      }
+    }
+
+    &:global(.buttonIconSmall) {
+      width: 29px;
+      height: 29px;
+    }
+
+    &:global(.buttonIconLarge) {
+      width: 49px;
+      height: 49px;
+    }
+
+    &:global(.buttonIconBackgroundNone) {
+      background: color(#F7F7F7 alpha(0%));
+    }
+
+    &:global(.buttonIconBackgroundNone-alt) {
+      background: color(#F7F7F7 alpha(0%));
+    }
+
+    &:global(.buttonIconBackgroundYellow) {
+      background: color(#FFDA47 lightness(-12%));
+    }
+
+    &:global(.buttonIconBackgroundBlue) {
+      background: #0768D8;
+    }
+
+    &:global(.buttonIconBackgroundOrange) {
+      background: #D75B2B;
+    }
+
+    &:global(.buttonIconBackgroundGreen) {
+      background: #189E44;
+    }
+
+    &:global(.buttonIconBackgroundWhite) {
+      background: #FFFFFF;
+    }
+  }
+
+  & > :global(.buttonTooltip) {
+    position: absolute;
+    width: 1000%;
+    max-width: 160px;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.4;
+    background: #3999BE;
+    box-shadow: 0px 0px 12px color(#3999BE lightness(-24%) alpha(0.4));
+    color: #F7F7F7;
+    border-radius: 2px;
+    z-index: 2;
+    display: none;
+
+    &:global(.buttonTooltipOnleft) {
+      right: 140%;
+    }
+
+    &:global(.buttonTooltipOntop) {
+      bottom: 120%;
+    }
+
+    &:global(.buttonTooltipOnright) {
+      left: 140%;
+    }
+
+    &:global(.buttonTooltipOnbottom) {
+      top: 120%;
+    }
+
+    &:global(.buttonTooltipOnleftIn),
+    &:global(.buttonTooltipOntopIn),
+    &:global(.buttonTooltipOnrightIn),
+    &:global(.buttonTooltipOnbottomIn) {
+      animation-delay: 0ms;
+      animation-duration: 600ms;
+      animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    }
+
+    &:global(.buttonTooltipOnleftIn) { animation-name: showTooltipOnLeft; }
+    &:global(.buttonTooltipOntopIn) { animation-name: showTooltipOnTop; }
+    &:global(.buttonTooltipOnrightIn) { animation-name: showTooltipOnRight; }
+    &:global(.buttonTooltipOnbottomIn) { animation-name: showTooltipOnBottom; }
+
+    &:global(.buttonTooltipOnleftOut),
+    &:global(.buttonTooltipOntopOut),
+    &:global(.buttonTooltipOnrightOut),
+    &:global(.buttonTooltipOnbottomOut) {
+      animation-delay: 0ms;
+      animation-duration: 500ms;
+      animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    }
+
+    &:global(.buttonTooltipOnleftOut) { animation-name: hideTooltipFromLeft; }
+    &:global(.buttonTooltipOntopOut) { animation-name: hideTooltipFromTop; }
+    &:global(.buttonTooltipOnrightOut) { animation-name: hideTooltipFromRight; }
+    &:global(.buttonTooltipOnbottomOut) { animation-name: hideTooltipFromBottom; }
+  }
+
+  &:hover {
+
+    & > :global(.buttonLabel) {
+
+      &:global(.buttonLabelBlack) {
+        border-bottom-color: #0B0C32;
+      }
+
+      &:global(.buttonLabelWhite) {
+        border-bottom-color: #F7F7F7;
+      }
+
+      &:global(.buttonLabelYellow) {
+        border-bottom-color: #FFDA47;
+      }
+
+      &:global(.buttonLabelBlue) {
+        border-bottom-color: #0768D8;
+      }
+
+      &:global(.buttonLabelOrange) {
+        border-bottom-color: #D75B2B;
+      }
+    }
+
+    & > :global(.buttonIcon) {
+
+      &:global(.buttonIconBackgroundNone) {
+        background: #CEC7C0;
+      }
+
+      &:global(.buttonIconBackgroundNone-alt) {
+        background: #1A5B74;
+      }
+
+      &:global(.buttonIconBackgroundYellow) {
+        background: #FFDA47;
+      }
+
+      &:global(.buttonIconBackgroundBlue) {
+        background: #3999BE;
+      }
+
+      &:global(.buttonIconBackgroundOrange) {
+        background: #EF7445;
+      }
+
+      &:global(.buttonIconBackgroundGreen) {
+        background: #2DBF4F;
+      }
+
+      &:global(.buttonIconBackgroundWhite) {
+        background: #CEC7C0;
+      }
+    }
+  }
+}
+
+@keyframes showTooltipOnLeft {
+  0% { transform: translateX(24px); opacity: 0; }
+  80% { opacity: 1; }
+  100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes hideTooltipFromLeft {
+  0% { transform: translateX(0px); opacity: 1; }
+  100% { transform: translateX(24px); opacity: 0; }
+}
+
+@keyframes showTooltipOnRight {
+  0% { transform: translateX(-24px); opacity: 0; }
+  80% { opacity: 1; }
+  100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes hideTooltipFromRight {
+  0% { transform: translateX(0px); opacity: 1; }
+  100% { transform: translateX(-24px); opacity: 0; }
+}
+
+@keyframes showTooltipOnTop {
+  0% { transform: translateY(12px); opacity: 0; }
+  80% { opacity: 1; }
+  100% { transform: translateY(0px); opacity: 1; }
+}
+
+@keyframes hideTooltipFromTop {
+  0% { transform: translateY(0px); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+@keyframes showTooltipOnBottom {
+  0% { transform: translateY(-12px); opacity: 0; }
+  80% { opacity: 1; }
+  100% { transform: translateY(0px); opacity: 1; }
+}
+
+@keyframes hideTooltipFromBottom {
+  0% { transform: translateY(0px); opacity: 1; }
+  100% { transform: translateY(-12px); opacity: 0; }
+}
